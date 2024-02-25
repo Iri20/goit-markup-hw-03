@@ -8,54 +8,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/modern-normalize.css"/>
 </head>
 
 <body>
-  <header class="global-header">
-    <nav class="navbar">
-      <ul class="nav-list">
-        <li><a class="logo">STUDIO</a></li>
-        <li><a href="./index.html">Studio</a></li>
-        <li><a href="./portofolio.html">Portofolio</a></li>
-        <li><a>Contacts</a></li>
-      </ul>
-    </nav>
+  <header class="container global-header">
+      <nav class="navbar">
+        <ul class=" header-container nav-list">
+          <li><a class="logo">STUDIO</a></li>
+          <li><a href="./index.html">Studio</a></li>
+          <li><a href="./portofolio.html">Portofolio</a></li>
+          <li><a>Contacts</a></li>
+          <a class="info-page" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="info-page" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+        </ul>
+      </nav>
+    
+      
 
-    <a class="info-page" href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <a class="info-page" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
   </header>
     
   <main>
      <!-- Hero Section-->
-<section class="hero-section">
-    <h1 class="hero-title">Effective Solutions for Your Business</h1>
-    <button type="button" class="button-service">Order Service</button>
+<section class="container hero-section">
+    <div class="hero-container">
+      <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
+    </div>
+    <div class="btn-container">
+      <button type="button" class="button-service">Order Service</button>
+    </div>
 </section>
     
-<section>
- <ul>
-  <li>
-    <h3>Strategy</h3>
-    <p class="about-studio">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-  </li>
-  <li>
-    <h3>Punctuality</h3>
-    <p class="about-studio">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-  </li>
-  <li>
-    <h3>Diligence</h3>
-    <p class="about-studio">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-  </li>
-  <li>
-    <h3>Technologies</h3>
-    <p class="about-studio">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-  </li>
- </ul>
+<section class="container">
+    <ul class="about-container">
+      <li>
+        <h3>Strategy</h3>
+        <p class="about-studio">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+      </li>
+      <li>
+        <h3>Punctuality</h3>
+        <p class="about-studio">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+      </li>
+      <li>
+        <h3>Diligence</h3>
+        <p class="about-studio">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+      </li>
+      <li>
+        <h3>Technologies</h3>
+        <p class="about-studio">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+      </li>
+     </ul>
 </section>
 
-<section>
-  <h2>What are we doing</h2>
-  <ul>
+<section class="container">
+  <div class="title-container">
+    <h2>What are we doing</h2>
+  </div>
+  <ul class="services-container">
     <li>
       <img src="./images/paginacalculator.jpg" alt="pagina web pe calculator" width="360"/>
     </li>
@@ -68,10 +77,10 @@
   </ul>
 </section>
 
-<section>
+<section class="container">
   <h2 class="section-team">Our Team</h2>
 
- <ul>
+ <ul class="team-container">
   <li>
     <img src="./images/markguerrero.jpg" alt="Mark Guerrero" width="264"/>
     <h3>Mark Guerrero</h3>
