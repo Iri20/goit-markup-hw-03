@@ -22,17 +22,20 @@ h3 {
   color: #2e2f42;
 }
 .container {
-  width: 1200px;
 }
-.header-container {
-  width: 1440px;
-  height: 72px;
+.header-container ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 24px 40px 24px 76px;
 }
-.logo {
-  padding-left: 56px;
+.container-logo {
+  display: flex;
+  align-items: center;
+  margin: 24px 76px 24px 156px;
+}
+.container-info {
+  display: flex;
+  flex-wrap: wrap;
 }
 .hero-section {
   background: #2e2f42;
