@@ -21,29 +21,56 @@ h3 {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.container {
+.global-header {
+  font-size: 56px;
+line-height: 1.07143;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
 }
-.header-container ul {
+.header-container {
+  width: 1200px;
+  height: 72px;
   display: flex;
-  justify-content: space-between;
-  padding: 24px 40px 24px 76px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
-.container-logo {
+.logo {
   display: flex;
   align-items: center;
-  margin: 24px 76px 24px 156px;
+  justify-content: center;
+  text-decoration: none
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.container-info {
-  display: flex;
-  flex-wrap: wrap;
+.web-footer {
+  color: #4d5ae5;
 }
-.hero-section {
+.web {
+  color: #4d5ae5; 
+}
+.footer-container .studio {
+  color:#fff
+}
+.hero {
   background: #2e2f42;
   width: 1440px;
   height: 600px;
+  position: relative;
+  text-align: center;
 }
 .hero-title {
   color: #fff;
+  box-sizing: content-box;
+  width: 496px;
+  height: 120px;
+  margin: auto;
 }
 .hero-container {
   padding-top: 188px;
@@ -64,80 +91,53 @@ h3 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  border: none;
 }
-.btn-container {
-  text-align: center;
-  padding: 356px, 635px, 188px, 636px;
-  margin-top: 48px;
+.button-service:active {
+  background-color: #4d5ae5;;
+}
+.container-button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
 }
 .button-bar {
+  margin-top: 150px;
+  flex-direction: column;
+}
+.button-bar ul {
+  gap: 1.5em;
   display: flex;
-    justify-content: space-between;
-    width: 601px;
-    height: 48px; 
-    padding-left: 40px; 
-    margin-top: 8px; 
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
 }
-.all-button {
+.container-button li button {
   font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-text-align: center;
-color: #4d5ae5;
-background: #f4f4fd;
-border: none;
-}
-.all-button:hover{
-  color:  #fff; 
-  background: #404bbf;
-}
-.first-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 24px;
   letter-spacing: 0.04em;
   text-align: center;
-  color:#fff;
-  background: #404bbf;
-}
-.first-button:hover {
-  background: #404bbf;
-}
-.global-header {
-  font-size: 56px;
-line-height: 1.07143;
-letter-spacing: 0.02em;
-text-align: center;
-color: #fff;
-}
-.logo::before {
-  content: "WEB";
+  border-radius: 4px;
+  padding: 12px 24px;
+  background-color: #f4f4fd;
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #e7e9fc;
 }
-.logo-footer::before {
-  content: "WEB";
-  color: #4d5ae5;
+.container-button li button:hover {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
+.container-button li button:active {
+  background-color: #404bbf;
 }
 .logo-footer{
   color: #f4f4fd;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.logo {
-  color: #2e2f42;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -153,16 +153,51 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
-.info-page:hover{
+.info-page a:hover,
+.info-page a:focus {
   color: teal;
 }
 .nav-list {
   font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42; 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 76px;
+}
+.nav-list ul li {
+  padding-left: 40px;
+}
+.nav-list a:hover {
+  color: #404bbf;
+}
+.index,
+.portfolio,
+.contacts {
+  letter-spacing: 0.02em;
+  color: #2e2f42;;
+  font-weight: 500;
+  position: relative;
+}
+.index:hover::after,
+.portfolio:hover::after,
+.contacts:hover::after,
+.index:focus::after,
+.portfolio:focus:after,
+.contacts:focus::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: 4px;
+  background-color: #404bbf;;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
 }
 .about-studio {
   font-family: "Roboto", sans-serif;
@@ -176,7 +211,7 @@ color: #434455;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1128px;
+  width: 1200px;
   height: 104px;
   padding-top: 120px;
 }
@@ -184,23 +219,37 @@ color: #434455;
   margin-top: 8px;
   margin-right: 24px;
 }
-.title-container {
+.title-services {
   margin-top: 120px;
   align-items: center;
 }
 .services-container {
- display: flex;
- margin: 72px 156px 120px 156px;
- justify-content: center;
- width: 1128px;
- height: 412px;
+  width: 1200px;
+  height: 412px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
-.services-container li {
-  margin-right: 24px;
+.container-doing ul.services {
+  display: flex;
+  justify-content: center;
+  gap: 59px;
+  margin-top: 72px;
+}
+.team {
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.team ul.member {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 24px;
 }
 .section-team {
  background: #f4f4fd;
- margin-top: 240px;
+ margin-top: 120px;
 }
 .section-team h2 {
   padding-top: 120px;
@@ -218,8 +267,11 @@ color: #434455;
   height: 732px;
 }
 .team-container {
-  width: 1440px;
-height: 732px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0px 0px 4px 4px;
+  gap: 47px;
+  padding-top: 72px;
 }
 .team-container ul {
  background: #f4f4fd;
@@ -273,15 +325,21 @@ padding-right: 1020px;
   display: flex;
   justify-content: space-between;
   margin-top: 72px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 .card2 {
   display: flex;
   margin-top: 48px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 .card3 {
   display: flex;
   margin-top: 48px;
   margin-bottom: 120px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 a {
   text-decoration: none;

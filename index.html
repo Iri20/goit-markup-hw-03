@@ -14,32 +14,35 @@
 
 <body>
 
-  <header class="container global-header">
+  <header class="global-header">
     <div>
-      <div class="container-logo">
-        <a class="logo">STUDIO</a>
-      </div>
-        <nav class="navbar">
-          <ul class="header-container nav-list">
+      <div class="header-container">
+        <a class="logo" href="index.html">
+          <span class="web">web</span>
+          <span class="studio">studio</span></a>
+        <div class="nav-list">
+        <nav>
+          <ul>
             <li><a href="./index.html">Studio</a></li>
             <li><a href="./portofolio.html">Portofolio</a></li>
-            <li><a>Contacts</a></li>
+            <li><a href="contacts.html" class="contacts">Contacts</a></li>
           </ul>
         </nav>
-      <ul class="container-info">
-          <li><a class="info-page" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="info-page" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+        <div class="info-page"> 
+      <ul>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
       </ul>
+        </div>
+      </div>
     </div>
   </header>
     
   <main>
      <!-- Hero Section-->
-<section class="container hero-section">
+<section class="hero">
     <div class="hero-container">
       <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-    </div>
-    <div class="btn-container">
       <button type="button" class="button-service">Order Service</button>
     </div>
 </section>
@@ -65,51 +68,48 @@
      </ul>
 </section>
 
-<section class="container">
-  <div class="title-container">
-    <h2>What are we doing</h2>
-  </div>
-  <ul class="services-container">
+<section class="container-doing">
+  <div class="services-container">
+    <h2 class="title-services">What are we doing</h2>
+  <ul class="services">
     <li>
-      <img src="./images/paginacalculator.jpg" alt="pagina web pe calculator" width="360"/>
+      <img src="./images/paginacalculator.jpg" alt="pagina web pe calculator" width="360" height="300"/>
     </li>
     <li>
-      <img src="./images/paginatelefon.jpg" alt="pagina web pe telefon" width="360"/>
+      <img src="./images/paginatelefon.jpg" alt="pagina web pe telefon" width="360" height="300"/>
     </li>
     <li>
-      <img src="./images/paginacalculatortelefon.jpg" alt="pagina web pe calculator si telefon" width="360"/>
+      <img src="./images/paginacalculatortelefon.jpg" alt="pagina web pe calculator si telefon" width="360" height="300"/>
     </li>
   </ul>
+  </div>
 </section>
 
-<section class="container">
+<section class="team">
   <div class="our-container">
     <h2 class="section-team">Our Team</h2>
-
-  <div class="team-container">
-    <ul>
-      <li>
+    <ul class="team-container">
+      <li class="member">
         <img src="./images/markguerrero.jpg" alt="Mark Guerrero" width="264"/>
         <h3>Mark Guerrero</h3>
         <p class="our-team">Product Designer</p>
       </li>
-      <li>
+      <li class="member">
         <img src="./images/tomford.jpg" alt="Tom Ford" width="264"/>
         <h3>Tom Ford</h3>
         <p class="our-team">Frontend Developer</p>
       </li>
-      <li>
+      <li class="member">
         <img src="./images/camilagarcia.jpg" alt="Camila Garcia" width="264"/>
         <h3>Camila Garcia</h3>
         <p class="our-team">Marketing</p>
       </li>
-      <li>
+      <li class="member">
         <img src="./images/danielwilson.jpg" alt="Daniel Wilson" width="264"/>
         <h3>Daniel Wilson</h3>
         <p class="our-team">UI Designer</p>
       </li>
      </ul>
-  </div>
   </div>
     
 </section>
@@ -117,7 +117,10 @@
   
   <footer class="container footer-section">
     <div class="footer-container">
-      <a class="logo-footer" href="webstudio.html">STUDIO</a>
+      <a class="logo-footer" href="index.html">
+        <span class="web-footer">web</span>
+        <span class="studio-footer">studio</span>
+      </a>
     <p class="footer-paragraph">
       Increase the flow of customers and sales for your business with digital marketing & growth solutions.
     </p>
