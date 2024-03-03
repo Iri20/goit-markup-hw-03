@@ -22,11 +22,23 @@ h3 {
   color: #2e2f42;
 }
 .global-header {
+  background-color: #ffffff;
   font-size: 56px;
-line-height: 1.07143;
-letter-spacing: 0.02em;
-text-align: center;
-color: #fff;
+  line-height: 1.07143;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #e7e9fc;
+  position: fixed;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.global-header ul {
+  display: flex;
 }
 .header-container {
   width: 1200px;
@@ -34,7 +46,7 @@ color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  padding-left: 156px;
 }
 .logo {
   display: flex;
@@ -147,11 +159,11 @@ color: #fff;
 }
 .info-page {
   font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 .info-page a:hover,
 .info-page a:focus {
@@ -201,11 +213,11 @@ color: #434455;
 }
 .about-studio {
   font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 .about-container {
   display: flex;
@@ -248,19 +260,19 @@ color: #434455;
   gap: 24px;
 }
 .section-team {
- background: #f4f4fd;
- margin-top: 120px;
+  background: #f4f4fd;
+  margin-top: 120px;
 }
 .section-team h2 {
   padding-top: 120px;
 }
 .our-team {
   font-weight: 400;
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 0.02em;
- text-align: center;
- color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
 }
 .our-container {
   width: 1440px;
@@ -274,10 +286,10 @@ color: #434455;
   padding-top: 72px;
 }
 .team-container ul {
- background: #f4f4fd;
- display: flex;
- padding-top: 72px;
- padding-bottom: 120px;
+  background: #f4f4fd;
+  display: flex;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 .team-container li {
   margin-right: 24px;
@@ -300,18 +312,18 @@ color: #434455;
   padding-bottom: 32px;
 }
 .footer-section {
- background: #2e2f42;
- width: 1440px;
-height: 312px;
+  background: #2e2f42;
+  width: 1440px;
+  height: 312px;
 }
 .footer-container {
-padding-top: 102px;
-padding-left: 156px;
-padding-right: 1020px;
+  padding-top: 102px;
+  padding-left: 156px;
+  padding-right: 1020px;
 }
 .footer-paragraph {
- color: #f4f4fd;
- padding-top: 16px;
+  color: #f4f4fd;
+  padding-top: 16px;
 }
 .cards ul {
   display: flex;
@@ -324,22 +336,23 @@ padding-right: 1020px;
 .card1 {
   display: flex;
   justify-content: space-between;
+  width: 1200px;
+  height: 420px;
   margin-top: 72px;
-  margin-left: 156px;
-  margin-right: 156px;
+
 }
 .card2 {
   display: flex;
+  width: 1200px;
+  height: 420px;
   margin-top: 48px;
-  margin-left: 156px;
-  margin-right: 156px;
 }
 .card3 {
   display: flex;
+  width: 1200px;
+  height: 420px;
   margin-top: 48px;
   margin-bottom: 120px;
-  margin-left: 156px;
-  margin-right: 156px;
 }
 a {
   text-decoration: none;
