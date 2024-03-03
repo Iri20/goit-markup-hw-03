@@ -89,21 +89,29 @@ h3 {
   align-content: center;
 }
 .button-service {
-  border-radius: 4px;
-  padding: 16px 32px;
+  position: relative;
+  z-index: 2;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
   width: 169px;
   height: 56px;
+  border-radius: 4px;
+  margin-top: 48px;
+}
+.hero button-service {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .button-service:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
-  border: none;
+  background-color: #404bbf;
 }
 .button-service:active {
   background-color: #4d5ae5;;
@@ -140,7 +148,7 @@ h3 {
 }
 .container-button li button:hover {
   color: #ffffff;
-  background-color: #4d5ae5;
+  background-color: #4d5ae5; 
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;
@@ -339,7 +347,6 @@ h3 {
   width: 1200px;
   height: 420px;
   margin-top: 72px;
-
 }
 .card2 {
   display: flex;
